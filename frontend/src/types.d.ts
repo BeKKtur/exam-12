@@ -16,6 +16,17 @@ export interface RegisterResponse {
     message: string;
 }
 
+export interface Image {
+    _id: string;
+    title: string;
+    image: File | null
+}
+
+export interface ImageMutation {
+    title: string;
+    image: File | null
+}
+
 export interface LoginMutation {
     email: string;
     password: string;

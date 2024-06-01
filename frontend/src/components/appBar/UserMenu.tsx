@@ -33,7 +33,7 @@ const UserMenu:React.FC<Props> = ({user}) => {
                 >
                     Hello {user.displayName}
                 </Button>
-                <Link component={RouterLink} to="/new-item" variant="body2" color='inherit'>
+                <Link component={RouterLink} to="/new-photo" variant="body2" color='inherit'>
                     Add new photo
                 </Link>
             </Grid>

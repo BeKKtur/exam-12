@@ -6,9 +6,15 @@ export interface User {
     googleID?: string;
 }
 
-export interface Photo {
+export interface Image {
     title: string;
+    user: string;
+    image: string | null
 
+}
+
+interface ImageMethods {
+    username(username: string): Promise<boolean>;
 }
 
 interface UserMethods {
@@ -17,3 +23,5 @@ interface UserMethods {
 }
 
 export type UserModel = Model<User, {}, UserMethods>
+
+export type ImageModel = Model<Items, {}, ItemMethods>
