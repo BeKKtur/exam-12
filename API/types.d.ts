@@ -1,8 +1,14 @@
 export interface User {
-    username: string;
+    email: string;
     password: string;
-    displayName: string;
+    displayName?: string;
     token: string;
+    googleID?: string;
+}
+
+export interface Photo {
+    title: string;
+
 }
 
 interface UserMethods {

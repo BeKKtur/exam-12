@@ -8,7 +8,7 @@ const SALT_WORK_FACTORY = 10
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema<User, UserModel, UserMethods>({
-    username: {
+    email: {
         type: String,
         required: true,
         unique: true,
@@ -26,7 +26,9 @@ const userSchema = new Schema<User, UserModel, UserMethods>({
     token: {
         type: String,
         required: true,
-    }
+    },
+
+    googleID: String
 }, {versionKey: false});
 
 userSchema.set('toJSON',{
